@@ -8,12 +8,9 @@
   .keyword.punctuation,
   .string,
   .type,
-  .parameter {
+  .parameter,
+  .markup.link {
     color: lighten(@light-gray, 10%);
-  }
-
-  .todo {
-    color: @pale-green
   }
 }
 
@@ -48,7 +45,6 @@
   }
 }
 
-
 .storage {
   color: @blue;
 
@@ -56,6 +52,10 @@
     &.annotation,
     &.primitive {
       color: @cyan;
+    }
+
+    &.todo {
+      color: @pale-green;
     }
   }
 
@@ -249,6 +249,10 @@
   &.tag {
     color: @red;
   }
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .none {
