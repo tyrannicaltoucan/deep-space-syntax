@@ -1,4 +1,4 @@
-@import "syntax-variables";
+// Editor styling
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -27,7 +27,7 @@ atom-text-editor, :host {
       }
 
       &.cursor-line-no-selection {
-        color: @syntax-gutter-text-color-selected;
+        background-color: transparent;
       }
     }
   }
@@ -35,7 +35,7 @@ atom-text-editor, :host {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @syntax-gutter-text-color;
   }
 
   .invisible {
@@ -52,13 +52,12 @@ atom-text-editor, :host {
 }
 
 .line.cursor-line {
-  background-color: fade(@syntax-selection-color, 60%);
+  background-color: @syntax-cursor-line;
 }
 
 .bracket-matcher .region {
-  border-bottom: 2px solid @syntax-bracket-match-color;
+  border-bottom: 1px solid @syntax-bracket-match-color;
   box-sizing: border-box;
-  background-color: fade(@syntax-text-color, 20%);
   z-index: 100;
 }
 
