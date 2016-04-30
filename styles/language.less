@@ -10,18 +10,18 @@
   .type,
   .parameter,
   .markup.link {
-    color: lighten(@light-gray, 10%);
+    color: @light-gray;
   }
 }
 
 .entity {
 
   &.name.type {
-    color: @purple;
+    color: @orange;
   }
 
   &.other.inherited-class {
-    color: @red;
+    color: @green;
   }
 }
 
@@ -51,7 +51,7 @@
   &.type {
     &.annotation,
     &.primitive {
-      color: @cyan;
+      color: @blue;
     }
 
     &.todo {
@@ -75,7 +75,7 @@
   }
 
   &.character.escape {
-    color: @purple;
+    color: @cyan;
   }
 
   &.numeric {
@@ -92,7 +92,7 @@
 }
 
 .variable {
-  color: @orange;
+  color: @purple;
 
   &.interpolation {
     color: lighten(@red, 20%);
@@ -137,7 +137,7 @@
 
     &.heading,
     &.identity {
-      color: @blue;
+      color: @yellow;
     }
 
     &.bold {
@@ -146,7 +146,7 @@
     }
 
     &.italic {
-      color: @light-gray;
+      color: @blue;
       font-style: italic;
     }
   }
@@ -166,7 +166,7 @@
 
 .support {
   &.class {
-    color: @purple;
+    color: @orange;
   }
 
   &.type {
@@ -177,7 +177,7 @@
     color: @cyan;
 
     &.any-method {
-      color: @blue;
+      color: @yellow;
     }
   }
 }
@@ -189,29 +189,29 @@
 
   &.name.class,
   &.name.type.class {
-    color: @purple;
+    color: @orange;
   }
 
   &.name.section {
-    color: @blue;
+    color: @yellow;
   }
 
   &.name.tag {
-    color: @blue;
+    color: @purple;
   }
 
   &.other.attribute-name {
-    color: @yellow;
+    color: @orange;
 
     &.id {
-      color: @cyan;
+      color: @yellow;
     }
   }
 }
 
 .meta {
   &.class {
-    color: @red;
+    color: @orange;
 
     &.body {
       color: @syntax-text-color;
@@ -230,15 +230,15 @@
   }
 
   &.link {
-    color: @yellow;
+    color: @purple;
   }
 
   &.require {
-    color: @blue;
+    color: @yellow;
   }
 
   &.selector {
-    color: @purple;
+    color: @blue;
   }
 
   &.separator {
@@ -247,7 +247,7 @@
   }
 
   &.tag {
-    color: @red;
+    color: @syntax-text-color;
   }
 }
 
@@ -261,12 +261,12 @@
 
 .invalid {
   &.deprecated {
-    color: @red !important;
-    background-color: @very-dark-gray !important;
+    color: @syntax-background-color !important;
+    background-color: @yellow !important;
   }
   &.illegal {
-    color: @yellow !important;
-    background-color: @very-dark-gray !important;
+    color: @syntax-background-color !important;
+    background-color: @red !important;
   }
 }
 
@@ -279,12 +279,12 @@ atom-text-editor[mini] .scroll-view,
 
 .markup {
   &.bold {
-    color: @yellow;
+    color: @orange;
     font-weight: bold;
   }
 
   &.changed {
-    color: @blue;
+    color: @yellow;
   }
 
   &.deleted {
@@ -292,28 +292,28 @@ atom-text-editor[mini] .scroll-view,
   }
 
   &.italic {
-    color: @purple;
+    color: @blue;
     font-style: italic;
   }
 
   &.heading {
-    color: @blue;
+    color: @red;
 
     .punctuation.definition.heading {
       color: @yellow;
     }
   }
 
+  &.link {
+    color: @purple;
+  }
+
   &.inserted {
     color: @green;
   }
 
-  &.list {
-    color: @red;
-  }
-
   &.quote {
-    color: @yellow;
+    color: @green;
   }
 
   &.raw {
