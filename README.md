@@ -1,6 +1,6 @@
 # Deep Space Syntax Theme
 
-A dark, mid contrast syntax theme that's intergalactically friendly.
+A dark, cool colored syntax theme that's intergalactically friendly.
 
 ![screenshot](https://raw.githubusercontent.com/tyrannicaltoucan/deep-space-syntax/master/screenshot.png)
 
