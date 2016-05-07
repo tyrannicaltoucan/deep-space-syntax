@@ -55,7 +55,8 @@
     }
 
     &.todo {
-      color: @bright-green;
+      color: @pink;
+      font-weight: bold;
     }
   }
 
@@ -95,7 +96,7 @@
   color: @purple;
 
   &.interpolation {
-    color: lighten(@red, 20%);
+    color: @pink;
   }
 
   &.parameter {
@@ -153,7 +154,7 @@
 
   &.section {
     &.embedded {
-      color: lighten(@red, 20%);
+      color: @pink;
     }
 
     &.method,
@@ -268,11 +269,6 @@
     color: @syntax-background-color !important;
     background-color: @red !important;
   }
-}
-
-atom-text-editor[mini] .scroll-view,
-:host([mini]) .scroll-view {
-  padding-left: 1px;
 }
 
 // Languages -------------------------------------------------
