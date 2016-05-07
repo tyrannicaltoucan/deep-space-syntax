@@ -27,7 +27,7 @@ atom-text-editor, :host {
       }
 
       &.cursor-line-no-selection {
-        background-color: transparent;
+        background-color: @cursorline;
       }
     }
   }
@@ -42,21 +42,17 @@ atom-text-editor, :host {
     color: @syntax-text-color;
   }
 
-  .cursor {
-    color: @syntax-cursor-color;
-  }
-
   .selection .region {
     background-color: @syntax-selection-color;
   }
 }
 
 .line.cursor-line {
-  background-color: @syntax-cursor-line;
+  background-color: @cursorline;
 }
 
 .bracket-matcher .region {
-  border-bottom: 1px solid @syntax-bracket-match-color;
+  border-bottom: 1px solid @accent;
   box-sizing: border-box;
   z-index: 100;
 }
@@ -74,4 +70,9 @@ atom-text-editor .search-results .marker .region,
 atom-text-editor .search-results .marker.current-result .region,
 :host .search-results .marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
+}
+
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
+  padding-left: 1px;
 }
