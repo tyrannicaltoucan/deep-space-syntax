@@ -2,20 +2,20 @@
   .meta.structure.dictionary.json {
     & > .string.quoted.json {
       & > .punctuation.string {
-        color: @syntax-text-color;
+        color: @blue;
       }
-      color: @cyan;
+      color: @blue;
     }
   }
 
   .meta.structure.dictionary.json, .meta.structure.array.json {
     & > .value.json > .string.quoted.json,
     & > .value.json > .string.quoted.json > .punctuation {
-      color: @red;
+      color: @yellow;
     }
 
     & > .constant.language.json {
-      color: @yellow;
+      color: @purple;
     }
   }
 }

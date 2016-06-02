@@ -7,7 +7,6 @@
   .keyword,
   .keyword.punctuation,
   .string,
-  .type,
   .parameter,
   .markup.link {
     color: @light-gray;
@@ -15,7 +14,6 @@
 }
 
 .entity {
-
   &.name.type {
     color: @orange;
   }
@@ -33,11 +31,11 @@
   }
 
   &.operator {
-    color: @syntax-text-color;
+    color: @cyan;
   }
 
   &.other.special-method {
-    color: @cyan;
+    color: @blue;
   }
 
   &.other.unit {
@@ -47,48 +45,13 @@
 
 .storage {
   color: @blue;
-
-  &.type {
-    &.annotation,
-    &.primitive {
-      color: @blue;
-    }
-
-    &.todo {
-      color: @pink;
-      font-weight: bold;
-    }
-  }
-
-  &.modifier {
-    &.package,
-    &.import {
-      color: @syntax-text-color;
-    }
-  }
 }
 
 .constant {
   color: @red;
 
-  &.variable {
-    color: @red;
-  }
-
-  &.character.escape {
-    color: @cyan;
-  }
-
-  &.numeric {
-    color: @red;
-  }
-
   &.other.color {
     color: @cyan;
-  }
-
-  &.other.symbol {
-    color: @red;
   }
 }
 
@@ -117,21 +80,13 @@
   }
 
   &.other.link {
-    color: @red;
+    color: @purple;
   }
 }
 
 .punctuation {
   &.definition {
-    &.comment {
-      color: @gray;
-    }
-
-    &.method-parameters,
-    &.function-parameters,
     &.parameters,
-    &.separator,
-    &.seperator,
     &.array {
       color: @syntax-text-color;
     }
@@ -170,10 +125,6 @@
     color: @orange;
   }
 
-  &.type {
-    color: @cyan;
-  }
-
   &.function  {
     color: @cyan;
 
@@ -194,7 +145,7 @@
   }
 
   &.name.section {
-    color: @yellow;
+    color: @blue;
   }
 
   &.name.tag {
@@ -202,7 +153,7 @@
   }
 
   &.other.attribute-name {
-    color: @orange;
+    color: @red;
 
     &.id {
       color: @yellow;
@@ -219,15 +170,8 @@
     }
   }
 
-  &.method-call,
-  &.method {
-    color: @syntax-text-color;
-  }
-
-  &.definition {
-    &.variable {
-      color: @red;
-    }
+  &.delimiter.period {
+    color: @blue;
   }
 
   &.link {
@@ -248,7 +192,7 @@
   }
 
   &.tag {
-    color: @syntax-text-color;
+    color: @blue;
   }
 }
 
@@ -265,6 +209,7 @@
     color: @syntax-background-color !important;
     background-color: @yellow !important;
   }
+
   &.illegal {
     color: @syntax-background-color !important;
     background-color: @red !important;
@@ -275,7 +220,7 @@
 
 .markup {
   &.bold {
-    color: @orange;
+    color: @red;
     font-weight: bold;
   }
 
@@ -293,7 +238,7 @@
   }
 
   &.heading {
-    color: @red;
+    color: @purple;
 
     .punctuation.definition.heading {
       color: @yellow;
@@ -301,7 +246,7 @@
   }
 
   &.link {
-    color: @purple;
+    color: @yellow;
   }
 
   &.inserted {

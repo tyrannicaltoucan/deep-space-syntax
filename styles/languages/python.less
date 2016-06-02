@@ -3,7 +3,23 @@
     color: @blue;
   }
 
-  .variable.parameter {
-    color: @purple;
+  .variable {
+    color: @red;
+
+    &.function {
+      color: @purple;
+      font-style: italic;
+    }
+  }
+
+  .support {
+    &.function.builtin {
+      color: @yellow;
+    }
+
+    &.type.exception {
+      color: @orange;
+      font-style: italic;
+    }
   }
 }

@@ -1,11 +1,19 @@
 .source.java {
   .storage {
     &.modifier.import {
-      color: @syntax-text-color;
+      color: @green;
     }
 
     &.type {
       color: @purple;
+    }
+  }
+
+  .variable {
+    color: @red;
+
+    &.this {
+      font-style: italic;
     }
   }
 }
