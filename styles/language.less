@@ -47,6 +47,13 @@
   color: @blue;
 }
 
+&.note,
+&.hack,
+&.todo {
+  color: @pink;
+  font-weight: bold;
+}
+
 .constant {
   color: @red;
 
@@ -196,10 +203,6 @@
   }
 }
 
-.underline {
-  text-decoration: underline;
-}
-
 .none {
   color: @syntax-text-color;
 }
@@ -246,7 +249,7 @@
   }
 
   &.link {
-    color: @yellow;
+    color: @green;
   }
 
   &.inserted {
