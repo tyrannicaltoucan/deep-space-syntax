@@ -1,29 +1,12 @@
 .source.java {
   .storage {
+    &.modifier.package,
     &.modifier.import {
       color: @green;
     }
 
-    &.type {
-      color: @purple;
-    }
-  }
-
-  .variable {
-    color: @red;
-
-    &.this {
-      font-style: italic;
-    }
-  }
-}
-
-.source.java-properties {
-  .meta.key-pair {
-    color: @cyan;
-
-    & > .punctuation {
-      color: @gray;
+    &.type.annotation {
+      color: @cyan;
     }
   }
 }

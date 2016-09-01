@@ -26,16 +26,8 @@
 .keyword {
   color: @blue;
 
-  &.control {
-    color: @blue;
-  }
-
   &.operator {
-    color: @cyan;
-  }
-
-  &.other.special-method {
-    color: @blue;
+    color: @syntax-text-color;
   }
 
   &.other.unit {
@@ -47,23 +39,13 @@
   color: @blue;
 }
 
-&.note,
-&.hack,
-&.todo {
-  color: @pink;
-  font-weight: bold;
-}
-
 .constant {
   color: @red;
-
-  &.other.color {
-    color: @cyan;
-  }
 }
 
 .variable {
   color: @purple;
+
 
   &.interpolation {
     color: @pink;
@@ -76,7 +58,6 @@
 
 .string {
   color: @green;
-
 
   &.regexp {
     color: @cyan;
@@ -103,8 +84,12 @@
       color: @yellow;
     }
 
+    &.tag {
+      color: @purple;
+    }
+
     &.bold {
-      color: @orange;
+      color: @red;
       font-weight: bold;
     }
 
@@ -132,6 +117,7 @@
     color: @orange;
   }
 
+  &.type,
   &.function  {
     color: @cyan;
 
@@ -151,19 +137,16 @@
     color: @orange;
   }
 
-  &.name.section {
+  &.name.section,
+  &.name.tag {
     color: @blue;
   }
 
-  &.name.tag {
-    color: @purple;
-  }
-
   &.other.attribute-name {
-    color: @red;
+    color: @yellow;
 
     &.id {
-      color: @yellow;
+      color: @red;
     }
   }
 }
@@ -177,14 +160,6 @@
     }
   }
 
-  &.delimiter.period {
-    color: @blue;
-  }
-
-  &.link {
-    color: @purple;
-  }
-
   &.require {
     color: @yellow;
   }
@@ -196,10 +171,6 @@
   &.separator {
     background-color: @dark-gray;
     color: @syntax-text-color;
-  }
-
-  &.tag {
-    color: @blue;
   }
 }
 
@@ -216,51 +187,5 @@
   &.illegal {
     color: @syntax-background-color !important;
     background-color: @red !important;
-  }
-}
-
-// Languages -------------------------------------------------
-
-.markup {
-  &.bold {
-    color: @red;
-    font-weight: bold;
-  }
-
-  &.changed {
-    color: @yellow;
-  }
-
-  &.deleted {
-    color: @red;
-  }
-
-  &.italic {
-    color: @blue;
-    font-style: italic;
-  }
-
-  &.heading {
-    color: @purple;
-
-    .punctuation.definition.heading {
-      color: @yellow;
-    }
-  }
-
-  &.link {
-    color: @green;
-  }
-
-  &.inserted {
-    color: @green;
-  }
-
-  &.quote {
-    color: @green;
-  }
-
-  &.raw {
-    color: @cyan;
   }
 }

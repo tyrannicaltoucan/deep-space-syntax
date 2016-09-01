@@ -1,0 +1,40 @@
+.source.gfm {
+  .link .entity {
+    color: @orange;
+  }
+}
+
+.markup {
+  &.heading {
+    color: @blue;
+  }
+
+  &.bold {
+    color: @red;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @yellow;
+  }
+
+  &.deleted {
+    color: @red;
+  }
+
+  &.italic {
+    color: @yellow;
+    font-style: italic;
+  }
+
+  &.link,
+  &.inserted,
+  &.quote {
+    color: @green;
+  }
+
+  &.code,
+  &.raw {
+    color: @cyan;
+  }
+}
