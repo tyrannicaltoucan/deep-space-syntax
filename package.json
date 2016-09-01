@@ -2,13 +2,11 @@
   "name": "deep-space-syntax",
   "theme": "syntax",
   "version": "0.4.1",
-  "description": "A dark, cool colored syntax theme that's intergalactically friendly.",
+  "description": "A dark, intergalactically friendly syntax theme.",
   "keywords": [
-    "syntax",
-    "deep",
-    "space",
+    "deep space",
     "dark",
-    "theme"
+    "syntax"
   ],
   "repository": "https://github.com/tyrannicaltoucan/deep-space-syntax",
   "license": "MIT",
