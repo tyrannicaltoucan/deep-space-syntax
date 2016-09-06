@@ -1,11 +1,10 @@
-// Base colors
-@very-light-gray: #9aa7bd;
-@light-gray: #7587a6;
-@gray: #51617d;
-@dark-gray: #323c4d;
-@very-dark-gray: #1b202a;
+@gray1: #1b202a;
+@gray2: #323c4d;
+@gray3: #51617d;
+@gray4: #7587a6;
+@gray5: #9aa7bd;
+@gray6: #c9d0dc;
 
-@pink: #b4749e;
 @red: #b15e7c;
 @orange: #b3785d;
 @yellow: #b5a262;
@@ -13,11 +12,10 @@
 @cyan: #56adb7;
 @blue: #608cc3;
 @purple: #8f72bf;
+@pink: #b4749e;
 
-@bright-blue: #599dff;
-
-// Color variables
-@guide: fade(@light-gray, 15%);
-@accent: @bright-blue;
-@gutter: darken(@gray, 5%);
-@cursorline: fade(@gray, 18%);
+@accent: saturate(darken(@syntax-text-color, 10%), 20%);
+@marker: fade(@gray6, 20%);
+@cursorline: fade(@gray3, 15%);
+@gutter: darken(@gray3, 10%);
+@selection: lighten(@gray1, 6%);

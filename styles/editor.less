@@ -1,8 +1,25 @@
-// Editor styling
+// Editor styles (background, gutter, guides)
 
-atom-text-editor, :host {
+atom-text-editor,
+:host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
+
+  .find-result .region.region.region,
+  .current-result .region.region.region {
+    border-radius: 2px;
+    background-color: @syntax-result-marker-color;
+    transition: border-color .4s;
+  }
+
+  .find-result .region.region.region {
+    border: 1px solid transparent;
+  }
+
+  .current-result .region.region.region {
+    border: 1px solid @syntax-result-marker-color-selected;
+    transition-duration: .1s;
+  }
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
@@ -32,6 +49,19 @@ atom-text-editor, :host {
     }
   }
 
+  .line.cursor-line {
+    background-color: @cursorline;
+  }
+
+  .bracket-matcher .region {
+    border-bottom: 2px solid @accent;
+    box-sizing: border-box;
+  }
+
+  .cursor {
+    border-left: 2px solid @syntax-cursor-color;
+  }
+
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
@@ -45,34 +75,4 @@ atom-text-editor, :host {
   .selection .region {
     background-color: @syntax-selection-color;
   }
-}
-
-.line.cursor-line {
-  background-color: @cursorline;
-}
-
-.bracket-matcher .region {
-  border-bottom: 1px solid @accent;
-  box-sizing: border-box;
-  z-index: 100;
-}
-
-.cursor {
-  border-left: 2px solid @syntax-cursor-color;
-}
-
-atom-text-editor .search-results .marker .region,
-:host .search-results .marker .region {
-  background-color: transparent;
-  border: 1px solid @syntax-result-marker-color;
-}
-
-atom-text-editor .search-results .marker.current-result .region,
-:host .search-results .marker.current-result .region {
-  border: 1px solid @syntax-result-marker-color-selected;
-}
-
-atom-text-editor[mini] .scroll-view,
-:host([mini]) .scroll-view {
-  padding-left: 1px;
 }
