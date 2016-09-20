@@ -1,5 +1,5 @@
 # Deep Space Syntax Theme
-A dark, intergalactically friendly color scheme for Atom.
+A dark, intergalactically friendly syntax theme for Atom.
 
 ![screenshot](https://raw.githubusercontent.com/tyrannicaltoucan/deep-space-syntax/master/screenshot.png)
 
