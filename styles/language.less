@@ -8,6 +8,7 @@
   .keyword.punctuation,
   .string,
   .parameter,
+  .type,
   .markup.link {
     color: @gray4;
   }
@@ -16,10 +17,6 @@
 .entity {
   &.name.type {
     color: @orange;
-  }
-
-  &.other.inherited-class {
-    color: @green;
   }
 }
 
@@ -30,8 +27,8 @@
     color: @syntax-text-color;
   }
 
-  &.other.unit {
-    color: @red;
+  &.other.special-method {
+    color: @cyan;
   }
 }
 
@@ -60,7 +57,7 @@
   color: @green;
 
   &.regexp {
-    color: @cyan;
+    color: @yellow;
 
     .source.ruby.embedded {
       color: @orange;
@@ -68,35 +65,38 @@
   }
 
   &.other.link {
-    color: @purple;
+    color: @red;
   }
 }
 
 .punctuation {
   &.definition {
-    &.parameters,
-    &.array {
-      color: @syntax-text-color;
+    &.string {
+      color: @green;
+    }
+
+    &.tag {
+      color: @blue;
     }
 
     &.heading,
     &.identity {
-      color: @yellow;
-    }
-
-    &.tag {
-      color: @purple;
+      color: @blue;
     }
 
     &.bold {
-      color: @red;
+      color: @orange;
       font-weight: bold;
     }
 
     &.italic {
-      color: @blue;
+      color: @purple;
       font-style: italic;
     }
+  }
+
+  &.separator {
+    color: @syntax-text-color;
   }
 
   &.section {
@@ -117,7 +117,6 @@
     color: @orange;
   }
 
-  &.type,
   &.function  {
     color: @cyan;
 
@@ -137,16 +136,19 @@
     color: @orange;
   }
 
-  &.name.section,
-  &.name.tag {
+  &.name.section {
     color: @blue;
+  }
+
+  &.name.tag {
+    color: @purple;
   }
 
   &.other.attribute-name {
     color: @yellow;
 
     &.id {
-      color: @red;
+      color: @cyan;
     }
   }
 }
@@ -161,10 +163,6 @@
   }
 
   &.require {
-    color: @yellow;
-  }
-
-  &.selector {
     color: @blue;
   }
 

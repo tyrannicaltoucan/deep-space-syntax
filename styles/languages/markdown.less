@@ -1,6 +1,11 @@
 .source.gfm {
   .link .entity {
-    color: @orange;
+    color: @pink;
+  }
+
+  .variable.ordered,
+  .variable.unordered {
+    color: @purple;
   }
 }
 
@@ -9,8 +14,13 @@
     color: @blue;
   }
 
-  &.bold {
+  &.strike {
     color: @red;
+    text-decoration: line-through;
+  }
+
+  &.bold {
+    color: @yellow;
     font-weight: bold;
   }
 
@@ -22,19 +32,22 @@
     color: @red;
   }
 
-  &.italic {
-    color: @yellow;
-    font-style: italic;
-  }
-
-  &.link,
   &.inserted,
   &.quote {
     color: @green;
   }
 
+  &.italic {
+    color: @green;
+    font-style: italic;
+  }
+
   &.code,
   &.raw {
     color: @cyan;
+  }
+
+  &.link {
+    color: @purple;
   }
 }
