@@ -1,14 +1,7 @@
 # Deep Space Syntax Theme
-A dark, intergalactically friendly color scheme.
+A dark, intergalactically friendly color scheme for Atom.
 
-#### Javascript
-![javascript](https://raw.githubusercontent.com/tyrannicaltoucan/deep-space-syntax/master/screenshots/javascript.png)
-
-#### Sass
-![sass](https://raw.githubusercontent.com/tyrannicaltoucan/deep-space-syntax/master/screenshots/scss.png)
-
-#### HTML
-![html](https://raw.githubusercontent.com/tyrannicaltoucan/deep-space-syntax/master/screenshots/html.png)
+![screenshot](https://raw.githubusercontent.com/tyrannicaltoucan/deep-space-syntax/master/screenshot.png)
 
 ## Installation
 There are two ways to install this syntax theme:
